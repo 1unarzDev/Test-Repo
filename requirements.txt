@@ -1,0 +1,6 @@
+ultralytics==0.0.128  # Version of Ultralytics with YOLOv11
+opencv-python
+numpy
+torch
+
+# Include the actual packages that need to be installed in the same format
