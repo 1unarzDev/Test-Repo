@@ -165,7 +165,7 @@ I'm getting worn out writing all of these instructions, so I'm going to laze out
 
 As far as using Inventor or Fusion goes (which I sort of doubt you would be this far into Comp Sci while also doing engineering), my advice is that you just practice sketching objects with contraints and parametric modelling techniques. I personally prefer Fusion for its powerful timeline feature and faster modeling workflow, but Inventor is better at bringing together components and providing simulation tools. The UIs may seem a bit daunting at first, but I think that there is absolutely no reason to need massive tutorials other than to get a basic starting point.
 
-On a different note, a lot of programming, particularly autonomous programming, requires a strong understanding (or strong ability to copy and paste lol) of math. If you think that you will be involved in the programming of the underlying logic behind the autonomous navigation, I recommend that you learn some basic **linear algebra** (as in manipulating matrices, nothing fancy), *possibly* **calculus** (for acceleration and PID), **geometry**, particularly **trignometry** (this one is a must), **basic statistics** (if you are interested in error analysis, corrective algorithms, or point cloud grouping), physics (it can be helpful, but you can derive most of the important stuff intuitively), and maybe some discrete mathematics can't hurt (combinatorics, set theory, **big o notation**). If I'm being entirely honest though, most math in programming won't a wide breadth of knowledge in math, so you probably will be fine as you are.  
+On a different note, a lot of programming, particularly autonomous programming, requires a strong understanding (or strong ability to copy and paste lol) of math. If you think that you will be involved in the programming of the underlying logic behind the autonomous navigation, I recommend that you learn some basic **linear algebra** (as in manipulating matrices, nothing fancy), *possibly* **calculus** (for acceleration and PID), **geometry**, particularly **trignometry** (this one is a must), **basic statistics** (if you are interested in error analysis, corrective algorithms, or point cloud grouping), physics (it can be helpful, but you can derive most of the important stuff intuitively), and maybe some discrete mathematics can't hurt (combinatorics, set theory, **big o notation**). If I'm being entirely honest though, most math in programming doesn't get too crazy, so you shouldn't have to worry.  
 
 Here's my lazy dump of vocab terms or tools that I think may be useful (honestly, I wouldn't go out of my way to learn these, they will come over time):
 1. Docker Image
@@ -200,20 +200,49 @@ Here's my lazy dump of vocab terms or tools that I think may be useful (honestly
 30. Root
 31. ROS
 32. Bounding Box
-33. 
+33. Yaw
+34. Pitch
+35. Roll
+36. Linear Velocity
+37. Angular Velocity
+38. Camera Calibration
+39. Point Cloud
+40. LiDAR
+41. SLAM
+42. Motor Controller
+43. 
 
 ---
 
 
 ## Early Development Resources 💪
 
+1. [Git Notes 📁](#git-notes-)
+2. [Docker Notes 🐋](#docker-notes-)
+3. [ROS Notes 🤖](#ros-notes-)
+4. [Quick Jot Notes 📝](#quick-jot-notes-)
+
+Welcome to Early Development! A lot of this stuff is pretty crazy if you are just getting started, but the best way to learn by far is to actually do things. This guide is a sort of notes section where I write down important things that I learned along the way, and put resources for others in the future to further improve upon previous stuff.
+
+[**This is a very comprehensive flowchart of how the robot will ideally function this year.**](https://drive.google.com/file/d/1A_YrRUzLtcq7FW57C36pD_8YOVJtAapV/view?usp=sharing)
+
+# Git Notes 📁
+
 Change git remote url to avoid accidental pushes to base project
-   
    ```sh
    git remote set-url origin github_username/repo_name
    git remote -v # confirm the changes
    ```
-   
+
+# Docker Notes 🐋
+
+
+
+# ROS Notes 🤖
+
+This is how you build a ROS project.
    ```
-   cd $COLCON_WS && colcon build --symlink-install --packages-select mhs_roboboat && . install/setup.bash
+   cd $COLCON_WS && colcon build --symlink-install --packages-select <word-dir-here> && . install/setup.bash
    ```
+
+# Quick Jot Notes 📝
