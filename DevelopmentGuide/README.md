@@ -24,7 +24,7 @@ Additionally, **please note** be very careful while doing installs, and avoid be
 * **Containerization:** [Docker](https://docs.docker.com/: )
 * **LiDAR:** [KISS-ICP](https://github.com/PRBonn/kiss-icp?tab=readme-ov-file)
 * **Robotic Control Framework:** [ROS2 Humble](https://docs.ros.org/en/humble/index.html)
-* **Computer Vision:** [OpenCV](https://docs.opencv.org/4.x/index.html)
+* **Image Processing:** [OpenCV](https://docs.opencv.org/4.x/index.html)
 * **Version Control:** [Git](https://git-scm.com/)
 * **Navigation Stack:** [Nav2](https://docs.nav2.org/)
 * **Math Operations:** [NumPy](https://numpy.org/doc/stable/)
@@ -67,7 +67,7 @@ If you are following this guide, I assume that you have access to a personal dev
 
 **Bonus:** If you like customizing your development environment (especially if you plan to spend a lot of time developing), I recommend that you install customizations to spice up Ubuntu. If you want to speed up the process, then feel free to rice your Ubuntu installation (look it up if you want), but this is generally better suited towards Linux distros like Arch and for people who don't need very specific development environments (which hopefully shouldn't be an issue if you use a venv like Conda or Docker containers). Here is a list of things that I did to improve my Ubuntu.
 
-1. Modify your shell by following a tutorial that has a feel that you like, installing a shell theme (avoid getting zsh because it will make installations more tricky), installing extensions like auto-completion, and installing programs like neofetch and adding it to your .bashrc file.
+1. Modify your shell by following a tutorial that has a feel that you like, installing a shell theme (if you get zsh, make sure that you run the zsh script rather than the bash script that is provided), installing extensions like auto-completion, and installing programs like neofetch and adding it to your .bashrc file.
 2. Install a cleaner browser like Brave
 3. Get a matching wallpaper with your GNOME theme
 4. Hide ugly desktop and taskbar icons.
