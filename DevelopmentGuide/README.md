@@ -147,7 +147,7 @@ At a minimum, you **need** *Python version 3.10+, Git, Docker, and an IDE of you
    ```
    ros2 launch vrx_gz competition.launch.py
    ```
-12. If the VRX simulation doesn't work and it outputs something like `vrx_gz not recognized`, then you may need to add the PATH environment variable for the vrx_gz package. You can achieve this by running 
+12. If the VRX simulation doesn't work and it outputs something like `vrx_gz not recognized`, then you may need to add the PATH environment variable for the vrx_gz package. You can achieve this by putting the following in your .bashrc file (in your home directory) 
    ```sh
    export GZ_SIM_RESOURCE_PATH= ~/Downloads/ROS2-Docker-Crash-Course/gazebo_vrx_packages# Add vrx path
    . ~/.bashrc # Reload bash
@@ -210,7 +210,8 @@ Here's my lazy dump of vocab terms or tools that I think may be useful (honestly
 40. LiDAR
 41. SLAM
 42. Motor Controller
-43. 
+43. Cube Orange
+44. NVIDIA Jetson Nano
 
 ---
 
