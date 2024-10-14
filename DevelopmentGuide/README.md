@@ -1,4 +1,4 @@
-## Table of Contents
+# Table of Contents
 1. [🌟 Getting Started 🚀](#-getting-started-)
 2. [Installing Ubuntu 🤓](#installing-ubuntu-)
 3. [🌐 Installing Python, Git, and Other Tools 🐍](#-installing-python-git-and-other-tools-)
@@ -10,7 +10,7 @@
 ---
 
 
-## 🌟 Getting Started 🚀
+# 🌟 Getting Started 🚀
 
 Sorry for nesting this guide along with other similar code in the GitHub repo. I'm just trying to create a template that can be moved later without any confusion. Also, please let me know if this guide has any issues, I literally wrote the entire thing from memory and a few internet searches.
 
@@ -33,7 +33,7 @@ Additionally, **please note** be very careful while doing installs, and avoid be
 ---
 
 
-## Installing Ubuntu 🤓
+# Installing Ubuntu 🤓
 
 If you are following this guide, I assume that you have access to a personal device that is powerful enough to handle development. If you want to get Ubuntu, there are a dozen people that would install if on your computer if you asked. Otherwise, follow the instructions below or on [this video](https://www.youtube.com/watch?v=mXyN1aJYefc). If you are unsure what you are doing, PLEASE GET HELP. It is extremely easy to completely break your device while going through this process, so you have to be careful.
 
@@ -78,7 +78,7 @@ If you are following this guide, I assume that you have access to a personal dev
 ---
 
 
-## 🌐 Installing Python, Git, and Other Tools 🐍
+# 🌐 Installing Python, Git, and Other Tools 🐍
 
 At a minimum, you **need** *Python version 3.10+, Git, Docker, and an IDE of your choice* (VS Code works great for what we are doing). If you ever have issues with depedencies, generally speaking, `sudo dpkg -i --force-overwrite <\file\path\here>` for dpkg-related packages, and `sudo aptitude install <package-name>` after installing it with `sudo apt install aptitude` of course, will allow you to fix dependency errors unless they have a deeper cause. Anyway, here is what you need to do to get the necessary packages.
 
@@ -110,7 +110,7 @@ At a minimum, you **need** *Python version 3.10+, Git, Docker, and an IDE of you
 ---
 
 
-## 🐋 Setting Up Docker IMPORTANT 📦
+# 🐋 Setting Up Docker IMPORTANT 📦
 
 1. There are two different things that I recommend you install. Firstly, you can install docker by running 'sudo apt install docker.io'. After installing, go through the [Linux Docker Post-Install steps](https://docs.docker.com/engine/install/linux-postinstall/) If you don't do this, then you will have errors. For a GUI version of Docker, download [Docker Desktop](https://docs.docker.com/desktop/install/linux/). Optionally, install the [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#setting-up-nvidia-container-toolkit) to allow Docker to automatically configure your containers to use GPU acceleration.
 2. Test your install
@@ -159,7 +159,7 @@ After installing VS Code, I would recommend that you install the following exten
 ---
 
 
-## Know Your Lingo 📚
+# Know Your Lingo 📚
 
 I'm getting worn out writing all of these instructions, so I'm going to laze out and just give you a list of terms that I think are important to learn. I strongly advise you to look up these concepts online (videos are a good resouce). I personally think that [Fireship](https://www.youtube.com/@Fireship) (easy-to-understand programming concepts), [Articulated Robotics](https://www.youtube.com/@ArticulatedRobotics) (ROS and Robotics Specific), [ElectroBOOM](https://www.youtube.com/@ElectroBOOM) (electronics), [3B1B](https://www.youtube.com/@3blue1brown) (underlying mathematics), [MATLAB](https://www.youtube.com/@MATLAB) (algorithms), and [Computer Vision Engineer](https://www.youtube.com/@ComputerVisionEngineer/videos) (Object Detection) are all good YouTube channels for learning about the concepts commonly used in this club. 
 
@@ -215,7 +215,7 @@ Here's my lazy dump of vocab terms or tools that I think may be useful (honestly
 ---
 
 
-## Early Development Resources 💪
+# Early Development Resources 💪
 
 1. [Git Notes 📁](#git-notes-)
 2. [Docker Notes 🐋](#docker-notes-)
@@ -226,7 +226,7 @@ Welcome to Early Development! A lot of this stuff is pretty crazy if you are jus
 
 [**This is a very comprehensive flowchart of how the robot will ideally function this year.**](https://drive.google.com/file/d/1A_YrRUzLtcq7FW57C36pD_8YOVJtAapV/view?usp=sharing)
 
-# Git Notes 📁
+### Git Notes 📁
 
 Change git remote url to avoid accidental pushes to base project
    ```sh
@@ -234,15 +234,15 @@ Change git remote url to avoid accidental pushes to base project
    git remote -v # confirm the changes
    ```
 
-# Docker Notes 🐋
+### Docker Notes 🐋
 
 
 
-# ROS Notes 🤖
+### ROS Notes 🤖
 
 This is how you build a ROS project.
    ```
    cd $COLCON_WS && colcon build --symlink-install --packages-select <word-dir-here> && . install/setup.bash
    ```
 
-# Quick Jot Notes 📝
+### Quick Jot Notes 📝
