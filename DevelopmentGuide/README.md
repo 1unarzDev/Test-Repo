@@ -1,3 +1,13 @@
+## Table of Contents
+1. [🌟 Getting Started 🚀](#-getting-started-)
+2. [Installing Ubuntu 🤓](#installing-ubuntu-)
+3. [🌐 Installing Python, Git, and Other Tools 🐍](#-installing-python-git-and-other-tools-)
+4. [🐋 Setting Up Docker IMPORTANT 📦](#-setting-up-docker-important-)
+5. [Know Your Lingo 📚](#know-your-lingo-)
+6. [Early Development Resources 💪](#early-development-resources-)
+
+---
+
 ## 🌟 Getting Started 🚀
 
 Sorry for nesting this guide along with other similar code in the GitHub repo. I'm just trying to create a template that can be moved later without any confusion. Also, please let me know if this guide has any issues, I literally wrote the entire thing from memory and a few internet searches.
@@ -17,7 +27,7 @@ Anyway, here is a list of tools that will be helpful for development in Roboboat
 
 ---
 
-## Installing Ubuntu
+## Installing Ubuntu 🤓
 
 If you are following this guide, I assume that you have access to a personal device that is powerful enough to handle development. If you want to get Ubuntu, there are a dozen people that would install if on your computer if you asked. Otherwise, follow the instructions below or on [this video](https://www.youtube.com/watch?v=mXyN1aJYefc). If you are unsure what you are doing, PLEASE GET HELP. It is extremely easy to completely break your device while going through this process, so you have to be careful.
 
@@ -50,7 +60,7 @@ If you are following this guide, I assume that you have access to a personal dev
 
 ---
 
-## Installing Python, Git, and Other Tools
+## 🌐 Installing Python, Git, and Other Tools 🐍
 
 At a minimum, you need Python version 3.10+, Git, Docker, and an IDE of your choice (VS Code works great for what we are doing). If you ever have issues with depedencies, generally speaking, `sudo dpkg -i --force-overwrite <\file\path\here>` for dpkg-related packages, and `sudo aptitude install <package-name>` after installing it with `sudo apt install aptitude` of course, will allow you to fix dependency errors unless they have a deeper cause. Anyway, here is what you need to do to get the necessary packages.
 
@@ -76,11 +86,20 @@ At a minimum, you need Python version 3.10+, Git, Docker, and an IDE of your cho
    sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/keyrings/microsoft-archive-keyring.gpg sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/microsoft-archive-keyring.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
    sudo apt install code
    ```
-6. After installing VS Code, I would recommend that you install the following extensions, **Dev Containers, Docker, Python, Remote Development, Live Share,** and my personal favorite theme is Noctis Uva. After installing those extensions, there
 
+---
 
+## 🐋 Setting Up Docker IMPORTANT 📦
 
+6. After installing VS Code, I would recommend that you install the following extensions, **Dev Containers, Docker, Python, Remote Development, Live Share,** and my personal favorite theme is Noctis Uva. After installing those extensions, there should be a new blueish icon in the bottom left corner. Click on the icon, and from the dropdown, select "Attach Running Container"
 
+---
+
+## Know Your Lingo 📚
+
+---
+
+## Early Development Resources 💪
 
 5. Change git remote url to avoid accidental pushes to base project
    ```sh
